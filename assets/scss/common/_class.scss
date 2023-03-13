@@ -1,0 +1,49 @@
+@use "../presets" as *;
+
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  background-image: linear-gradient(to top, #3e54d3, #3f60d8, #426bdc, #4876df, #4f80e2);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  min-height: 100%;
+  padding: 1.125rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 400;
+  color: #FFFFFF;
+  padding: 2rem;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 15px #111c44;
+
+  @media (max-width: $tablet) {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  @media (max-width: 648px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 484px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 404px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 346px) {
+    font-size: .9rem;
+  }
+}
+
